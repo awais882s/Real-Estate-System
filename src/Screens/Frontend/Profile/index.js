@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
 
 const list = [
     {
-        title: 'Available For Donate',
+        title: 'Available For Buy',
         icon: 'calendar',
         iconName: AntDesign,
     },
