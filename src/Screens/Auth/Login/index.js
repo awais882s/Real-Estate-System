@@ -35,7 +35,7 @@ export default function Login({ navigation }) {
                 if (error.code === 'auth/email-already-in-use') {
                     alert("User already exist")
                 }
-                
+
                 if (error.code === 'auth/invalid-email') {
                     alert("Email invalid")
                 }
@@ -46,10 +46,10 @@ export default function Login({ navigation }) {
         <KeyboardAvoidingView>
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
                 <View>
-                    <StatusBar backgroundColor="#FF2156" barStyle="light-content" />
+                    <StatusBar backgroundColor="#3369e7" barStyle="light-content" />
                     <View style={styles.main}>
                         <View style={[commonJustify.rowCenter, { height: "40%" }]}>
-                            <Image style={styles.image} source={require("../../../../assets/Images/login-logo.png")} />
+                            <Image style={styles.image} source={require("../../../../assets/Images/homepic.jpg")} />
                         </View>
                         <View>
                             <View>
@@ -57,9 +57,9 @@ export default function Login({ navigation }) {
                                     label="Enter your email"
                                     mode="outlined"
                                     onChangeText={val => handleChange("email", val)}
-                                    outlineColor='#FF2156'
-                                    activeUnderlineColor='red'
-                                    activeOutlineColor='red'
+                                    outlineColor='#3369e7'
+                                    activeUnderlineColor='#00aeef'
+                                    activeOutlineColor='#00aeef'
                                     keyboardType="email-address"
                                 />
                             </View>
@@ -67,10 +67,12 @@ export default function Login({ navigation }) {
                                 <TextInput
                                     label="Enter your password"
                                     mode="outlined"
-                                    outlineColor='#FF2156'
-                                    activeUnderlineColor='red'
+                                    outlineColor='#3369e7'
+                                    activeUnderlineColor='#00aeef'
+
                                     onChangeText={val => handleChange("password", val)}
-                                    activeOutlineColor='red'
+                                    activeOutlineColor='#00aeef'
+
                                     secureTextEntry={isPasswordShow ? false : true}
                                     right={<TextInput.Icon name={isPasswordShow ? "eye" : "eye-off"}
                                         onPress={() => { setIsPasswordShow(!isPasswordShow) }}
@@ -78,7 +80,7 @@ export default function Login({ navigation }) {
                                 />
                             </View>
                             <View>
-                                <Button title="LOG IN" buttonStyle={{ backgroundColor: "#FF2156" }} radius="15" containerStyle={{ marginTop: 10 }} onPress={() => { handleSubmit() }} />
+                                <Button title="LOG IN" buttonStyle={{ backgroundColor: "#3369e7" }} radius="15" containerStyle={{ marginTop: 10 }} onPress={() => { handleSubmit() }} />
                             </View>
                             <View style={commonJustify.rowCenter}>
                                 <TouchableOpacity onPress={() => { navigation.navigate("Forgot") }}>
@@ -114,18 +116,18 @@ const styles = StyleSheet.create({
         padding: 10,
     },
     image: {
-        height: 330,
+        height:"100%",
         width: 200,
         resizeMode: "contain"
     },
     forget: {
         fontSize: 16,
-        color: "#FF2156",
-        marginTop: 6,
+        color: "#3369e7",
+        marginTop: 10,
     },
     register: {
         fontSize: 15,
-        color: "#FF2156",
+        color: "#3369e7",
     }
 
 })
