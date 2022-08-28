@@ -9,24 +9,24 @@ const Forgot = ({ navigation }) => {
         <KeyboardAvoidingView>
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
                 <View style={styles.main}>
-                    <StatusBar backgroundColor="#FF2156" barStyle="light-content" />
+                    <StatusBar backgroundColor="#3369e7" barStyle="light-content" />
                     <View style={styles.main}>
                         <View style={[commonJustify.rowCenter]}>
-                            <Image style={styles.image} source={require("../../../../assets/Images/login-logo.png")} />
+                            <Image style={styles.image} source={require("../../../../assets/Images/homepic.jpg")} />
                         </View>
                         <View>
                             <View>
                                 <TextInput
                                     label="Enter your email"
                                     mode="outlined"
-                                    outlineColor='#FF2156'
+                                    outlineColor='#3369e7'
                                     activeUnderlineColor='red'
                                     activeOutlineColor='red'
                                     keyboardType="email-address"
                                 />
                             </View>
                             <View>
-                                <Button title="Forgot Password" buttonStyle={{ backgroundColor: "#FF2156" }} radius="15" containerStyle={{ marginTop: 10 }} />
+                                <Button title="Forgot Password" buttonStyle={{ backgroundColor: "#3369e7" }} radius="15" containerStyle={{ marginTop: 10 }} />
                             </View>
                         </View>
                         <View>
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     },
     forgot: {
         fontSize: 16,
-        color: "#FF2156",
+        color: "#3369e7",
         marginTop: 6,
     },
 
