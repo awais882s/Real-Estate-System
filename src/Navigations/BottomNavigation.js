@@ -72,7 +72,7 @@ const BottomNavigation = () => {
                                 style={{ width: 25, height: 25 }}
                                 source={require('../../assets/Images/menu.png')}
                             />
-                            <Text style={styles.donation}>Find Donner</Text>
+                            <Text style={styles.donation}>Find Agent</Text>
                         </View>
                     ),
                     headerRight: () => (
@@ -84,7 +84,7 @@ const BottomNavigation = () => {
                     )
                 }}
             />
-            <Tab.Screen name="DonationRequest" component={DonationRequest}
+            <Tab.Screen name="Requests" component={DonationRequest}
                 options={{
                     tabBarIcon: ({ color }) => (
                         <AntDesign name="rightcircleo" color={color} size={24} />
@@ -97,7 +97,7 @@ const BottomNavigation = () => {
                                 style={{ width: 25, height: 25 }}
                                 source={require('../../assets/Images/menu.png')}
                             />
-                            <Text style={styles.donation}>Donation Request</Text>
+                            <Text style={styles.donation}>Requests</Text>
                         </View>
                     ),
                     headerRight: () => (
