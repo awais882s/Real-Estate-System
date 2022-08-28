@@ -21,30 +21,30 @@ export default function SignUp({ navigation }) {
     }
     const handleRegister = () => {
         const { name, email, password, address, bloodGroup, phoneNo } = state;
-        // if (name.length < 3) {
-        //     alert("Please enter a valid name")
-        //     return;
-        // }
-        // if (!email) {
-        //     alert("Please enter ")
-        //     return;
-        // }
-        // if (password.length < 6) {
-        //     alert("Please enter a valid password")
-        //     return;
-        // }
-        // if (address.length < 10) {
-        //     alert("Please enter a valid address")
-        //     return;
-        // }
-        // if (!bloodGroup) {
-        //     alert("Please enter a valid group")
-        //     return;
-        // }
-        // if (phoneNo.length < 8) {
-        //     alert("Please enter a valid phone number")
-        //     return;
-        // }
+        if (name.length < 3) {
+            alert("Please enter a valid name")
+            return;
+        }
+        if (!email) {
+            alert("Please enter ")
+            return;
+        }
+        if (password.length < 6) {
+            alert("Please enter a valid password")
+            return;
+        }
+        if (address.length < 10) {
+            alert("Please enter a valid address")
+            return;
+        }
+        if (!bloodGroup) {
+            alert("Please enter a valid group")
+            return;
+        }
+        if (phoneNo.length < 8) {
+            alert("Please enter a valid phone number")
+            return;
+        }
         auth().createUserWithEmailAndPassword(email, password)
             .then((userCredential) => {
                 const user = userCredential.user;
