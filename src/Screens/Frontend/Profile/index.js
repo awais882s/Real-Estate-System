@@ -6,7 +6,6 @@ import { Button } from 'react-native-paper';
 import MaterialIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import AntDesign from "react-native-vector-icons/AntDesign";
 import auth from "@react-native-firebase/auth"
-
 import { commonJustify } from '../../../Common/CommonStyle/CommonStyle';
 import { AuthContext } from '../../../Contexts/AuthContexts';
 const Profile = () => {
@@ -31,13 +30,13 @@ const Profile = () => {
                 <View>
                     <Text style={[styles.profiletext, commonJustify.textCenter]}>{data.name}</Text>
                 </View>
-                <View style={[commonJustify.rowCenter, { marginVertical: 17 }]}>
+                <View style={[commonJustify.rowCenter, { marginVertical: 15 }]}>
                     <MaterialIcons name="map" size={24} color="black" />
                     <Text style={[styles.locationtext, commonJustify.textCenter]}>
                         Okara , Pakistan
                     </Text>
                 </View>
-                <View style={[commonJustify.rowSpaceEvenly, { marginVertical: 20 }]}>
+                <View style={[commonJustify.rowSpaceEvenly, { marginVertical: 15 }]}>
                     <Button color='#38AF48' icon="phone-in-talk" mode="outlined" onPress={() => console.log('Call Me')}>
                         Call Me
                     </Button>
@@ -45,21 +44,21 @@ const Profile = () => {
                         Request
                     </Button>
                 </View>
-                <View style={[commonJustify.rowSpaceEvenly, { marginTop: 20 }]}>
+                <View style={[commonJustify.rowSpaceEvenly, { marginTop: 15 }]}>
                     <View style={styles.card}>
-                        <Text style={styles.common}>Blood Type </Text>
-                        <Text style={styles.A}>A+ve</Text>
+                        <Text style={styles.common}>Type </Text>
+                        <Text style={styles.A}>Buy</Text>
                     </View>
                     <View style={styles.card}>
-                        <Text style={styles.common}>Donated</Text>
+                        <Text style={styles.common}>Buy</Text>
                         <Text style={styles.A}>05</Text>
                     </View>
                     <View style={styles.card}>
-                        <Text style={styles.common}>Requested</Text>
+                        <Text style={styles.common}>Home Loans</Text>
                         <Text style={styles.A}>02</Text>
                     </View>
                 </View>
-                <View style={{ marginVertical: 20 }}>
+                <View style={{ marginVertical: 10 }}>
                     {
                         list.map((item, i) => (
                             <ListItem containerStyle={{ marginTop: 20 }} key={i} bottomDivider>
@@ -103,7 +102,8 @@ const styles = StyleSheet.create({
     profiletext: {
         fontSize: 16,
         color: "black",
-        fontWeight: "bold"
+        fontWeight: "bold",
+        marginTop:10,
     },
     locationtext: {
         fontSize: 15,
