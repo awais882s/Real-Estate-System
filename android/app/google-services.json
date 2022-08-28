@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "114925853881",
+    "project_id": "blood-app882",
+    "storage_bucket": "blood-app882.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114925853881:android:2b0d76028c3962abb4cf68",
+        "android_client_info": {
+          "package_name": "com.blooddonation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "114925853881-mnumviu2q8g172afa0gu5log7d37gcij.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANH6PaugB1AyyiDvFhKzgEgHJytvIMWCc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "114925853881-mnumviu2q8g172afa0gu5log7d37gcij.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
