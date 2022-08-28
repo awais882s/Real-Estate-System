@@ -19,7 +19,7 @@ export default function SearchResultComponent({ item }) {
         <Text style={styles.location}>{item.location}</Text>
       </View>
       <View style={commonJustify.center}>
-        <Image style={{ width: 50, height: 50, resizeMode: "contain" }} source={require("../../../../assets/Images/BloodGroup.png")} />
+        {/* <Image style={{ width: 50, height: 50, resizeMode: "contain" }} source={require("../../../../assets/Images/BloodGroup.png")} /> */}
       </View>
     </View>
   )
