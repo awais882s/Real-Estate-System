@@ -26,7 +26,7 @@ export default function NotificationScreen() {
         >
             <AntDesign size={20} color={colorValue.primary} name="notification" />
             <ListItem.Content>
-                <ListItem.Title style={styles.person}>Awais Need A+ve Blood</ListItem.Title>
+                <ListItem.Title style={styles.person}>Awais Need To Buy House</ListItem.Title>
             </ListItem.Content>
             <ListItem.Chevron />
         </ListItem.Swipeable>
