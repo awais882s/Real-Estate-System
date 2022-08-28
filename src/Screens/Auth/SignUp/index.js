@@ -73,42 +73,42 @@ export default function SignUp({ navigation }) {
     return (
         <KeyboardAvoidingView>
             <View>
-                <StatusBar backgroundColor="#FF2156" barStyle="light-content" />
+                <StatusBar backgroundColor="#3369e7" barStyle="light-content" />
                 <View style={styles.main}>
                     <View style={[commonJustify.rowCenter]}>
-                        <Image style={styles.image} source={require("../../../../assets/Images/login-logo.png")} />
+                        <Image style={styles.image} source={require("../../../../assets/Images/homepic.jpg")} />
                     </View>
                     <View>
                         <View style={{ marginVertical: 4 }}>
                             <TextInput
-                                label="Enter your name"
+                                label="Enter Your Full Name"
                                 mode="outlined"
                                 onChangeText={val => handleChange("name", val)}
-                                outlineColor='#FF2156'
-                                activeUnderlineColor='red'
-                                activeOutlineColor='red'
+                                outlineColor='#3369e7'
+                                activeUnderlineColor='#00aeef'
+                                activeOutlineColor='#00aeef'
                                 keyboardType="default"
                             />
                         </View>
                         <View style={{ marginVertical: 4 }}>
                             <TextInput
-                                label="Enter your email"
+                                label="Enter your Email"
                                 mode="outlined"
                                 onChangeText={val => handleChange("email", val)}
-                                outlineColor='#FF2156'
-                                activeUnderlineColor='red'
-                                activeOutlineColor='red'
+                                outlineColor='#3369e7'
+                                activeUnderlineColor='#00aeef'
+                                activeOutlineColor='#00aeef'
                                 keyboardType="email-address"
                             />
                         </View>
                         <View style={{ marginVertical: 4 }}>
                             <TextInput
-                                label="Enter your password"
+                                label="Enter your Password"
                                 onChangeText={val => handleChange("password", val)}
                                 mode="outlined"
-                                outlineColor='#FF2156'
-                                activeUnderlineColor='red'
-                                activeOutlineColor='red'
+                                outlineColor='#3369e7'
+                                activeUnderlineColor='#00aeef'
+                                activeOutlineColor='#00aeef'
                                 secureTextEntry
                             />
                         </View>
@@ -117,20 +117,20 @@ export default function SignUp({ navigation }) {
                             <TextInput
                                 label="Enter your Mobile"
                                 mode="outlined"
-                                outlineColor='#FF2156'
-                                activeUnderlineColor='red'
+                                outlineColor='#3369e7'
+                                activeUnderlineColor='#00aeef'
                                 onChangeText={val => handleChange("phoneNo", val)}
-                                activeOutlineColor='red'
+                                activeOutlineColor='#00aeef'
                                 keyboardType="number-pad"
                             />
                         </View>
                         <View style={{ marginVertical: 4 }}>
                             <TextInput
-                                label="Enter your Blood Group e.g A+ , B+"
+                                label="Enter Your Username"
                                 mode="outlined"
-                                outlineColor='#FF2156'
-                                activeUnderlineColor='red'
-                                activeOutlineColor='red'
+                                outlineColor='#3369e7'
+                                activeUnderlineColor='#00aeef'
+                                activeOutlineColor='#00aeef'
                                 onChangeText={val => handleChange("bloodGroup", val)}
                                 keyboardType="default"
                             />
@@ -139,15 +139,15 @@ export default function SignUp({ navigation }) {
                             <TextInput
                                 label="Enter your Address"
                                 mode="outlined"
-                                outlineColor='#FF2156'
-                                activeUnderlineColor='red'
+                                outlineColor='#3369e7'
+                                activeUnderlineColor='#00aeef'
                                 onChangeText={val => handleChange("address", val)}
-                                activeOutlineColor='red'
+                                activeOutlineColor='#00aeef'
                                 keyboardType="default"
                             />
                         </View>
                         <View>
-                            <Button title="SIGN UP" onPress={handleRegister} buttonStyle={{ backgroundColor: "#FF2156" }} radius="15" containerStyle={{ marginTop: 10 }} />
+                            <Button title="Register Account" onPress={handleRegister} buttonStyle={{ backgroundColor: "#3369e7" }} radius="15" containerStyle={{ marginTop: 10 }} />
                         </View>
                         <View style={commonJustify.rowCenter}>
                             <TouchableOpacity onPress={() => navigation.navigate("Login")}>
@@ -178,8 +178,8 @@ const styles = StyleSheet.create({
     },
     login: {
         fontSize: 14,
-        color: "#FF2156",
-        marginTop: 6,
+        color: "##3369e7",
+        marginTop: 10,
         fontFamily: "sans-serif"
     }
 })
