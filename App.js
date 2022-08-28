@@ -7,7 +7,7 @@ export default function App() {
   return (
     <AuthContextProvider>
       <View style={styles.main}>
-        <StatusBar backgroundColor="#FF2156" />
+        <StatusBar backgroundColor="#3369e7" />
         <StackNavigation />
       </View>
     </AuthContextProvider>

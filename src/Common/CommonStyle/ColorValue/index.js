@@ -1,5 +1,5 @@
 const colorValue = {
-    primary: "#FF2156",
+    primary: "#3369e7",
     white: "#FFFFFF",
     color: "#000000",
     liteDark: "#7E7E7E",

@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, } from 'react';
-import { Animated, ImageBackground } from 'react-native';
+import { Animated, ImageBackground, StyleSheet, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 const FadeInView = (props) => {
     const fadeAnim = useRef(new Animated.Value(0)).current  // Initial value for opacity: 
@@ -18,7 +18,7 @@ const FadeInView = (props) => {
     useEffect(() => {
         setTimeout(() => {
             navigation.navigate("OnBoard")
-        }, 4000);
+        }, 400000);
     })
     return (
         <Animated.View
@@ -33,10 +33,27 @@ const FadeInView = (props) => {
 }
 export default () => {
     return (
-        <FadeInView style={{ height: '100%', width: '100%', backgroundColor: 'powderblue' }}>
+        <FadeInView style={styles.main}>
             {/* <StatusBar backgroundColor="#DC3434" barStyle="light-content" /> */}
-            <ImageBackground style={{ height: "100%", width: "100%" }} resizeMode="stretch" source={require("../assets/Images/splash.jpg")}>
-            </ImageBackground>
+            <View style={styles.img} >
+                <ImageBackground style={{ height: "60%" }} source={require("../assets/Images/homepic.jpg")}>
+                </ImageBackground>
+            </View>
         </FadeInView>
     )
 }
+
+const styles = StyleSheet.create({
+    img: {
+        justifyContent: 'center',
+        // flex: 1,
+        height: "100%"
+    },
+    main: {
+        height: '100%',
+        width: '100%',
+        backgroundColor: 'white',
+        flex: 1,
+        justifyContent: "center"
+    }
+})             
