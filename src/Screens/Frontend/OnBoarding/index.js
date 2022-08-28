@@ -56,14 +56,14 @@ const styles = StyleSheet.create({
 const Array = [
     {
         backgroundColor: "#fff",
-        image: <Image source={require("../../../../assets/Images/bro.png")} />,
-        title: "Find Blood Donners",
-        subtitle: "Donate blood & save lives",
+        image: <Image source={require("../../../../assets/Images/z4.jpg")} />,
+        title: "Find it Tour it Own it.",
+        subtitle: "Let’s find a home that’s perfect for you",
     },
     {
         backgroundColor: "#fff",
-        image: <Image source={require("../../../../assets/Images/rafiki.png")} />,
-        title: "Post a Blood Request",
-        subtitle: "Be the reason for someone's heartbeat",
+        image: <Image source={require("../../../../assets/Images/awais.jpg")} />,
+        title: "Know the value of your home",
+        subtitle: "Search nearby apartments, condos, and homes for rent",
     },
 ];

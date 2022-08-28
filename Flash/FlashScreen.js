@@ -18,7 +18,7 @@ const FadeInView = (props) => {
     useEffect(() => {
         setTimeout(() => {
             navigation.navigate("OnBoard")
-        }, 400000);
+        }, 4000);
     })
     return (
         <Animated.View
