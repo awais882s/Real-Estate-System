@@ -24,7 +24,7 @@ const BottomNavigation = () => {
                 // tabBarShowLabel: false,
                 tabBarActiveTintColor: "#fff",
                 tabBarInactiveTintColor: "#000000",
-                tabBarActiveBackgroundColor: "#FF2156",
+                tabBarActiveBackgroundColor: "#3369e7",
                 tabBarLabelStyle: {
                     fontSize: 13,
                     // fontStyle: "italic"
@@ -37,7 +37,7 @@ const BottomNavigation = () => {
                         <AntDesign name="home" color={color} size={28}
                         />
                     ),
-                    tabBarActiveBackgroundColor: "#FF2156",
+                    tabBarActiveBackgroundColor: "#3369e7",
                     headerTitle: "",
                     headerLeft: () => (
                         <View style={{ marginHorizontal: 10 }}>

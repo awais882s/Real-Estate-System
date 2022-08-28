@@ -16,7 +16,7 @@ export default function SwiperWithRender() {
             paginationStyleItem={{ width: 10, height: 10 }}
             paginationActiveColor={colorValue.primary}
             paginationDefaultColor="black"
-            paginationStyleItemInactive={{ borderWidth: 2, borderColor: "#FF2156" }}
+            paginationStyleItemInactive={{ borderWidth: 2, borderColor: "#3369e7" }}
             paginationStyle={{ height: 10, width: 10 }}
             index={0}
             autoplayLoop

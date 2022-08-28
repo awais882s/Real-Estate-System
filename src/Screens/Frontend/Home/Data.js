@@ -1,33 +1,35 @@
+
 export const ItemArray = [
     {
         id: 1,
-        title: "Find Donners",
-        image: require("../../../../assets/Images/ion_search-outline.png"),
+        title: "Buy",
+        image: require("../../../../assets/Images/home.jpg"),
+      
     },
     {
         id: 2,
-        title: "Donates",
-        image: require("../../../../assets/Images/openmoji_blood-transfusion.png"),
+        title: "Rent",
+        image: require("../../../../assets/Images/rent.jpg"),
     },
     {
         id: 3,
-        title: "Order Bloods",
-        image: require("../../../../assets/Images/si-glyph_blood-bag.png"),
+        title: "Sell",
+        image: require("../../../../assets/Images/sail.jpg"),
     },
     {
         id: 4,
-        title: "Assistant",
-        image: require("../../../../assets/Images/maki_doctor-11.png"),
+        title: "Home Loans",
+        image: require("../../../../assets/Images/homeloan.jpg"),
     },
     {
         id: 5,
-        title: "Report",
-        image: require("../../../../assets/Images/la_file-medical-alt.png"),
+        title: "Agent Finder",
+        image: require("../../../../assets/Images/agent.jpg"),
     },
     {
         id: 6,
-        title: "Compaign",
-        image: require("../../../../assets/Images/grommet-icons_announce.png"),
+        title: "Advertise",
+        image: require("../../../../assets/Images/advertise.jpg"),
     }
 ]
 // blood request data
