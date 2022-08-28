@@ -19,10 +19,10 @@ export const DonationCard = ({ item }) => {
                 </View>
             </View>
             <View style={{ paddingTop: 20 }}>
-                <Image style={{ width: 100 }} resizeMode="contain" source={require("../../../../../assets/Images/A+ve.png")} />
+                {/* <Image style={{ width: 100 }} resizeMode="contain" source={require("../../../../../assets/Images/A+ve.png")} /> */}
                 <View style={{ marginTop: 10, marginRight: 10 }}>
-                    <Button color='#FF2156' mode="outlined" onPress={() => console.log('Pressed')}>
-                        Donate
+                    <Button color='#3369e7"' mode="outlined" onPress={() => console.log('Pressed')}>
+                        Contact Us
                     </Button>
                 </View>
             </View>
